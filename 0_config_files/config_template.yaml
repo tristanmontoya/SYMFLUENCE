@@ -14,8 +14,8 @@
 #
 ### ============================================= 1. Global settings: =======================================================================
 
-SYMFLUENCE_DATA_DIR: /Users/darrieythorsson/compHydro/code/SYMFLUENCE_data
-SYMFLUENCE_CODE_DIR: /Users/darrieythorsson/compHydro/code/SYMFLUENCE
+SYMFLUENCE_DATA_DIR: /Users/tristanmontoya/Projects/SYMFLUENCE_data
+SYMFLUENCE_CODE_DIR: /Users/tristanmontoya/Projects/SYMFLUENCE
 
 # Experiment settings
 DOMAIN_NAME: Bow_at_Banff                                      # Name of modeled domain
@@ -101,7 +101,8 @@ HYDROLOGICAL_MODEL: SUMMA                                      # Hydrological mo
 ROUTING_MODEL: mizuRoute                                       # Routing model, options: mizuRoute
 
 ### 4.1 Model Specific settings: SUMMA 
-SUMMA_EXE: summa_sundials.exe                                  # Name of SUMMA executable
+#SUMMA_EXE: summa_sundials.exe                             # Name of SUMMA executable 
+SUMMA_EXE: ../../Summa-Actors/bin/summa_actors.exe
 SETTINGS_SUMMA_CONNECT_HRUS: yes                               # Attribute setting: "no" or "yes". If no; all HRUs modeled as independent columns 
 SETTINGS_SUMMA_TRIALPARAM_N: 0                                 # Number of trial parameter specifications in inital setup. Specify 0 if none are wanted (they can still be included in this file but won't be read).
 SETTINGS_SUMMA_TRIALPARAM_1:                                   # Name of trial parameter and value to assign. Value assumed to be float.
